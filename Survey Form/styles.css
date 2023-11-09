@@ -1,1 +1,39 @@
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link href="styles.css" rel="sylesheet">
+    </head>
+    <body>
+      <div><h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform<p></div>
+  <fieldset>  <form id="survey-form">
+          <label id="name-label" for="name">Name:<input type="text" id="name" placeholder="enter your name" required/></label>
+          <label for="email" id="email-label">Email:<input type="email" id="email" placeholder="enter your email-id"required/></label>
+          <label for="number" id="number-label">Age:<input type="number" id="number" min="18" max="115" placeholder="enter your age between 18 and 115"/></label>
+          <label for="dropdown">Which option best describes your current role?<select id="dropdown">
+            <option>select current role</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+            <option>other</option>
+          </select>
+            </label>
+            <legend>Would you recommend freeCodeCamp to a friend?
+              <label for="radio"><input type="radio" name="radio-button" checked value="Definitely">Definitely</label>
+              <label for="radio"><input type="radio" name="radio-button" value="May be">May be</label>
+              <label for="radio"><input type="radio" name="radio-button" value="Not sure">Not sure</label>
+            </legend>
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+           <label for="check-box"><input type="checkbox" value="11" id="check-box"/>Frontend-projects</label>
+           <label for="check-box"><input type="checkbox" value="12" id="check-box"/>Backtend-projects</label>
+           <label for="check-box"><input type="checkbox" value="13" id="check-box"/>Challenges</label>
+           <label for="check-box"><input type="checkbox" value="14" id="check-box"/>Opensource community</label>
+         <label for="textarea">Any comments or suggestions?
+           <textarea rows="5" cols="50" id="textarea" placeholder="enter your comment here..."></textarea>
+         </label>
+         <input type="submit" id="submit" value="submit">
+          </form>
+          </fieldset>
+      </body>
+  </html>
